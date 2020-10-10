@@ -80,6 +80,7 @@ extension ViewController: UISearchBarDelegate {
 
 extension ViewController: SuggestionTableViewDelegate {
     func suggestionDidSelect(searchKey: String) {
+        imageSearchBar.text = searchKey
         imageTableView.searchImageFor(searchKey, shouldInsert: false)
         imageSearchBar.resignFirstResponder()
         suggestionTableView.isHidden = true
