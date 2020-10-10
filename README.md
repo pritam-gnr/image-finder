@@ -1,7 +1,7 @@
 # image-finder
 One can search images by typing text on the search bar. This is not a library. This is an complete project.
 
-[![Watch the video]()](https://github.com/pritam-gnr/image-finder/blob/main/ScreensRecording/SR.mp4)
+[![Watch the video](https://github.com/pritam-gnr/image-finder/blob/main/ScreensRecording/Screenshot%202020-10-10%20at%203.56.36%20PM.png)](https://github.com/pritam-gnr/image-finder/blob/main/ScreensRecording/SR.mp4)
 
 ## Features List
 • Search your favourite images
