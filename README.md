@@ -1,5 +1,5 @@
 # image-finder
-One can search images by typing text on the search bar.
+One can search images by typing text on the search bar. This is not a library. This is an complete project.
 
 ## Features List
 • Search your favourite images
@@ -27,4 +27,19 @@ One can search images by typing text on the search bar.
 ## Minimum Requirements
 • iOS 13.1 is set as minimum currently
 
-• Swift 5 is used for coding.
+## Technology Used
+• Swift 5 is used for coding
+
+• CoreData used for local db
+
+• 'Alamofire' and 'AlamofireImage', these two pod library are used for API calling and image loading from URL
+
+• 'Lightbox' is used for image viewer
+
+• MVC architecture followed throuhout the project
+
+• For Searchbar the default iOS Searchbar is used
+
+• for Listing the images and suggestions UItableView is used
+
+• For Searching https://pixabay.com APIs are used
