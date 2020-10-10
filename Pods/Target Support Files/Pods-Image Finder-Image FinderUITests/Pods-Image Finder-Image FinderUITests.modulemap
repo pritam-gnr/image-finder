@@ -1,0 +1,6 @@
+framework module Pods_Image_Finder_Image_FinderUITests {
+  umbrella header "Pods-Image Finder-Image FinderUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

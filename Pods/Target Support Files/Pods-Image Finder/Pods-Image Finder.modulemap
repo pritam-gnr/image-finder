@@ -1,0 +1,6 @@
+framework module Pods_Image_Finder {
+  umbrella header "Pods-Image Finder-umbrella.h"
+
+  export *
+  module * { export * }
+}

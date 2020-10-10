@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Image_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search Image" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CHu-d0-So0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8g4-kq-Dm4" customClass="ImageTableView" customModule="Image_Finder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iWT-Go-6EV" customClass="SuggestionTableView" customModule="Image_Finder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8g4-kq-Dm4" secondAttribute="trailing" id="4Yc-tV-7Dj"/>
+                            <constraint firstItem="8g4-kq-Dm4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9AT-15-xZX"/>
+                            <constraint firstItem="iWT-Go-6EV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9rf-uY-RtD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CHu-d0-So0" secondAttribute="trailing" id="Fe6-ZZ-f9a"/>
+                            <constraint firstItem="8g4-kq-Dm4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HSe-Zb-nOZ"/>
+                            <constraint firstItem="CHu-d0-So0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MUu-XE-s6k"/>
+                            <constraint firstItem="iWT-Go-6EV" firstAttribute="top" secondItem="CHu-d0-So0" secondAttribute="bottom" id="PuH-Bg-g3j"/>
+                            <constraint firstItem="CHu-d0-So0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SAF-Sm-XwZ"/>
+                            <constraint firstItem="8g4-kq-Dm4" firstAttribute="top" secondItem="CHu-d0-So0" secondAttribute="bottom" id="Y9f-le-MGi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iWT-Go-6EV" secondAttribute="bottom" id="qXX-Bi-1r3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iWT-Go-6EV" secondAttribute="trailing" id="wig-Iq-zWe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageSearchBar" destination="CHu-d0-So0" id="L0b-2X-akR"/>
+                        <outlet property="imageTableView" destination="8g4-kq-Dm4" id="lTf-jh-yZd"/>
+                        <outlet property="suggestionTableView" destination="iWT-Go-6EV" id="Vej-1n-H7J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
